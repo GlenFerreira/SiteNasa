@@ -1,4 +1,4 @@
-# Projeto Site NASA
+# Projeto Site NASA com 2IAB
 
 Este projeto consiste em um site que consome a API da NASA para exibir a "Astronomia Foto do Dia" (APOD).
 
