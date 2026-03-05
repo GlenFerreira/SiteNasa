@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA - Cosmic Birthday</title>
+    <meta name="description" content="Discover the Astronomy Picture of the Day for your birthday.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <main class="container">
+        <header>
+            <h1>Cosmic Birthday</h1>
+            <p>Enter your birth date to see what was happening in the universe.</p>
+        </header>
+
+        <section class="search-box">
+            <input type="date" id="birth-date" required>
+            <button id="discover-btn">Discover</button>
+        </section>
+
+        <section id="result-container" class="result-container hidden">
+            <div class="media-card">
+                <div id="media-content"></div>
+                <div class="info">
+                    <h2 id="apod-title"></h2>
+                    <p id="apod-explanation"></p>
+                    <p class="copyright" id="apod-copyright"></p>
+                </div>
+            </div>
+        </section>
+
+        <div id="loader" class="loader hidden">
+            <div class="spinner"></div>
+            <p>Scanning the cosmos...</p>
+        </div>
+
+        <div id="error-msg" class="error-msg hidden"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
